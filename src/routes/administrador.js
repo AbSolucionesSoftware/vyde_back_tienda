@@ -3,6 +3,7 @@ const router = Router();
 const { getAdmins, deleteAdmin, createAdmin, getAdmin, updateAdmin, authAdmin } = require('../controllers/administrador.controllers');
 const auth = require('../middleware/auth');
 
+
 router.route('/auth')
 .post(authAdmin);
 
